@@ -3,3 +3,7 @@ https://expressjs.com/en/starter/generator.html
 - express --no-view nodejs-apigtwy
 - npm install
 - npm start
+
+- npm install dotenv
+- npm install --save-dev nodemon
+- npm i axios
