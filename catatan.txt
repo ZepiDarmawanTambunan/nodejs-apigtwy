@@ -10,4 +10,5 @@ https://expressjs.com/en/starter/generator.html
 
 - npm i jsonwebtoken
 
-- vd 5 & 6
+- URL_SERVICE_COURSE=http://127.0.0.1:8000 // kalau laravel di get di 
+node js gak bisa pakai localhost.
