@@ -15,6 +15,11 @@ const paymentsRouter = require('./routes/payments');
 const usersRouter = require('./routes/users');
 const refreshTokensRouter = require('./routes/refreshTokens');
 const mentorsRouter = require('./routes/mentors');
+const chaptersRouter = require('./routes/chapters');
+const lessonsRouter = require('./routes/lessons');
+const imageCoursesRouter = require('./routes/imageCourses');
+const myCoursesRouter = require('./routes/myCourses');
+const reviewsRouter = require('./routes/reviews');
 
 // MIDDLEWARE
 const verifyToken = require('./middlewares/verifyToken');
@@ -33,5 +38,10 @@ app.use('/orders', ordersRouter);
 app.use('/payments', paymentsRouter);
 app.use('/refresh-tokens', refreshTokensRouter);
 app.use('/mentors', mentorsRouter);
+app.use('/chapters', chaptersRouter);
+app.use('/lessons', lessonsRouter);
+app.use('/image-courses', imageCoursesRouter);
+app.use('/my-courses', myCoursesRouter);
+app.use('/reviews', reviewsRouter);
 
 module.exports = app;
