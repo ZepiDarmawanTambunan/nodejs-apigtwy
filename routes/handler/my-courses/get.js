@@ -9,7 +9,7 @@ module.exports = async(req, res) => {
     try {
         const userId = req.user.data.id;
 
-        const myCourse = await api.delete('/api/my-courses', {
+        const myCourse = await api.get('/api/my-courses', {
             params: {user_id: userId}
         });
         return res.json(myCourse.data);
